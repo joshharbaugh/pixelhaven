@@ -1,0 +1,14 @@
+/*
+Theme Name: Pixelhaven Minimal
+Theme URI: http://pixelhaven.co
+Description:
+Version: 1.0
+Author: Josh Harbaugh
+Author URI: http://pixelhaven.co
+Tags: clean, minimal
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/slideshow.css";
+@import "css/layout.css";

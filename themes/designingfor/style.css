@@ -1,0 +1,22 @@
+/*
+Theme Name: Designing For The Masses
+Theme URI: http://www.pixelhavenllc.com/themes/designingfor
+Description: Default theme for Designing For The Masses.
+Version: 1.0
+Author: Joshua Harbaugh
+Author URI: http://www.pixelhavenllc.com/
+Tags: clean, custom header, fixed width, two columns, widgets
+
+	Designing For The Masses v0.1
+
+	This theme was designed and built by Pixelhaven
+	http://www.pixelhavenllc.com
+
+*/
+
+
+/* Begin loading external stylesheets */
+
+@import url("stylesheets/reset.css");
+@import url("stylesheets/typography.css");
+@import url("stylesheets/structure.css");

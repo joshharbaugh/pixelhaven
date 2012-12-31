@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="description" content="Designing for the Masses README">
+
+      <title>Designing for the Masses README</title>
+      
+      <style type="text/css">
+      body {background-color:#EFEFEF; font-family:"Helvetica Neue",Arial,sans-serif; font-size: 62.5%; font-weight:normal; color:#4d4d4d; line-height:1;}
+      #wrap {margin: 2em 0 2em 3em; text-align: left;}
+      #bordered {text-align: left; background-color: #fff; border: 1px solid #ddd; width: 600px; padding:60px;}
+      h1 {color:#483A3A;font-size:2.8em;}
+      h3 {color:#DE564B;font-size:1.6em;}
+      p, li {font-size: 1.1em; font-weight:normal; line-height:1.6em;}
+      strong {font-size:1.2em; font-weight:bold; color:#483A3A;}
+      code {font-size:1.4em;}
+      </style>
+</head>
+<body>
+
+<div id="wrap">
+     <div id="bordered">
+          <h1>Quick-start Guide</h1>
+          <h3>Features of the Theme</h3>
+          <ol>
+          <li>A dynamic jQuery slide show using the popular <a href="http://www.malsup.com/jquery/cycle/">jQuery Cycle Plugin</a></li>
+          <li><em>Widgetized</em> sidebar with access to the Custom Menus in the newest version of WordPress.</li>
+          <li>Dynamically generated thumbnails based on the images within the posts. No need to manually setup your article thumbnails. The theme takes care of it for you.</li>
+
+          <li>A clean design that will not get in the way of your great content.</li>
+          </ol>
+
+          <h3>Installing the Theme</h3>
+          <ol>
+          <li>Download the Theme archive and extract the files it contains. You may need to preserve the directory structure in the archive when extracting these files. Follow the guidelines provided by your Theme author.</li>
+          <li>Using an FTP client to access your host web server, create a directory to contain your Theme in the wp-content/themes directory provided by WordPress. For example, a Theme named Test should be in wp-content/themes/test. Your Theme may provide this directory as part of the archive.</li>
+          <li>Upload the Theme files to the new directory on your host server.</li>
+          <li>Follow the <a href="#Selecting_Active_Theme">instructions below</a> for selecting the new Theme.</li>
+
+          </ol>
+
+          <a name="Selecting_Active_Theme"></a>
+          <h3>Selecting the Active Theme</h3>
+          <ol>
+          <li>Log in to the WordPress <a title="Administration Panels" href="http://www.wordpress.org/Administration_Panels">Administration Panel</a>.</li>
+          <li>Select the <a title="Administration Panels" href="http://www.wordpress.org/Administration_Panels#Appearance_-_Change_the_Look_of_your_Blog">Appearance</a> panel, then <a title="Administration Panels" href="http://www.wordpress.org/Administration_Panels#Themes">Themes</a>.</li>
+          <li>From the <b>Available Themes</b> section, click on the Theme title (or Theme screenshot) for the Theme you wish to activate.</li>
+
+          <li>A preview of the Theme will be shown.</li>
+          <li>To activate the Theme click the <b>Activate &#8220;Theme Name&#8221;</b> link in the top right.</li>
+          </ol>
+
+          <h3>Frequently Asked Questions</h3>
+          <p><strong>Q: How do I change the speed of the slide show on the homepage?</strong><br />
+          A: The script necessary to run the slide show is located in the header.php file within the theme folder.<br />
+          <code><br />
+          $('#slideshow').cycle({<br />
+
+          	fx:     'fade',<br />
+          	speed:	'750',<br />
+          	timeout: 5000,<br />
+          	next:   '#next',<br />
+              	prev:   '#prev'<br />
+           });<br />
+
+          </code><br />
+          If you would like to increase / decrease the time between transitions simply increase / decrease the value of <code>timeout</code>. The time is in milliseconds, so for 10 seconds we would increase the value to 10000 and 3 seconds would be 3000. To find out more information about the jQuery Cycle Plugin <a href="http://www.malsup.com/jquery/cycle/">visit their website</a>.</p>
+          <p><strong>Q: How do I show more than 3 slides in the slide show?</strong><br />
+          A: You can increase the number of posts pulled into the slide show by opening up your home.php file located within the theme folder and look for this line in the code:<br />
+          <code><br />
+          &lt;?php $featured = new WP_Query(); $featured->query('showposts=3'); while ($featured->have_posts()) : $featured->the_post(); ?><br />
+          </code><br />
+          You&#8217;ll want to change the value of showposts to increase the number of slides / posts shown in the slide show. For example, if we wanted to show 5 instead of 3 we would change <code>showposts=3</code> to <code>showposts=5</code>.</p>
+
+          <p><strong>Q: How do I change the logo?</strong><br />
+          A: The easiest way to change the logo is to overwrite the current logo.gif image located in the /images/ folder of the theme&#8217;s folder. Note: You may need to perform some anti-aliasing touch-up work depending on the quality &#038; color of the aliasing of your .gif. Using a .gif will allow for transparency when applying the image over the striped background.</p>
+          <p>If you have experience using .png (and are not worried about older users of Internet Explorer) you might want to try a .png instead since these give semi-transparency and can ultimately lead to much nicer integration. When using a .png you will need to modify the following line of code in the header.php file of the theme:<br />
+          <code><br />
+          &lt;div id="logo">&lt;a href="&lt;?php bloginfo('home'); ?>">&lt;img src="&lt;?php bloginfo('stylesheet_directory'); ?>/images/logo.gif" alt="Designing for the Masses" />&lt;/a>&lt;/div><br />
+
+          </code><br />
+          Change the <code>logo.gif</code> to whatever you&#8217;ve named your .png image.</p>
+
+          <p style="border-top:1px solid #ddd;padding-top:1.6em;margin-top:3em;">Any further questions can be emailed directly to me at <a href="mailto:pixelhavenllc@gmail.com">pixelhavenllc@gmail.com</a></p>
+     </div>
+</div>
+
+</body>
+</html>

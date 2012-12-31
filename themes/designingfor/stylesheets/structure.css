@@ -1,0 +1,406 @@
+body {
+	background:#FFF url(../images/stripes_bkg.jpg) repeat-x left top;
+}
+
+img, div, a, input { 
+	behavior: url(http://www.designingforthemasses.com/wp-content/themes/default/iepngfix.htc);
+}
+
+#top {
+	background-color: #000;
+	border-bottom: 1px solid #666;
+	height: 14px;
+	width: 100%;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	height: 155px;
+}
+#logo {
+	float: left;
+	margin-top: 35px;
+	margin-left: 25px;
+}
+
+
+
+/* Navigation
+----------------------------------------------- */
+
+#navigation {
+	position: relative;
+	margin-right: 12px;
+	float: right;
+	top: -60px;
+}
+#navigation li {
+	float: left;
+	margin-left: 5px;
+}
+#navigation li a {
+	float: left;
+	background-color: #151f24;
+	padding: 10px 18px;
+}
+#navigation li.current_page_item a {
+	background-color: #fff;
+}
+
+.navigation:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.navigation .alignleft {float:left;margin-bottom:18px;}
+.navigation .alignright {float:right;margin-bottom:18px;}
+
+
+/* General Structure
+----------------------------------------------- */
+
+#page-wrapper {
+	width: 945px;
+	margin: 0 auto;
+}
+
+#page {
+	float: left;
+	background: transparent url(../images/page-bkg.png) no-repeat left top;
+	padding: 25px 31px;
+	height: auto;
+	top: -60px;
+	position: relative;
+}
+
+
+
+/* Basic Content Styles
+----------------------------------------------- */
+
+#content {
+	float: left;
+	width: 643px;
+}
+#content h2 {
+	margin-bottom: 8px;
+}
+#content h4 { float: left; }
+#content h4 a {
+	background-color: #990000;
+	padding: 5px;
+	float: left;
+}
+#content .post {
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 38px;
+	margin-bottom: 14px;
+}
+#content .post a.image {
+	float: left;
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	margin-right: 11px;
+	margin-bottom: 11px;
+}
+#content .post h2 a {
+	width: 100%;
+	background: transparent;
+	padding: 0;
+}
+.post span {
+	margin-bottom: 10px;
+}
+#slideshow {
+	float:left;
+	margin-bottom: 5px;
+}
+#slide-nav {
+	float:right;
+	margin-bottom: 25px;
+	margin-right: 6px;
+}
+#slideshow .boxgrid {
+	overflow:hidden;
+	position:relative;
+	width:631px;
+	height:298px;
+	float:left;
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+#slideshow .boxcaption {
+	background:#000;
+	float:left;
+	height:100px;
+	opacity:0.8;
+	position:absolute;
+	width:641px;
+	left:0;
+	top:308px;
+}
+#slideshow .boxcaption h2 a {
+	color:#f4f4f4;
+	font-size:24px;
+	font-family:Georgia,serif;
+	font-style:italic;
+	text-decoration: none;
+	text-transform: capitalize;
+	position:relative;
+	top:15px;
+	left:20px;
+}
+#slideshow .boxcaption h2 a:hover {
+	border-bottom:1px solid #f4f4f4;
+}
+#slideshow .boxcaption p {
+	color:#ccc;
+	position:relative;
+	top:15px;
+	left:20px;
+	width:400px;
+}
+.entry p {
+	padding-bottom: 14px;
+}
+
+
+
+/* Popular Posts
+----------------------------------------------- */
+
+#popular-posts {
+	float: left;
+	border-bottom: 1px solid #bfbfbf;
+	margin-bottom: 12px;
+}
+
+#popular-posts .post {
+	float: left;
+	width: 310px;
+	margin-bottom: 0;
+}
+
+#popular-posts .post a.image {
+	float: left;
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+
+
+
+/* Pagination
+----------------------------------------------- */
+
+#pagination {
+	margin-bottom: 38px;
+}
+#pagination a {
+	border: 1px solid #acacac;
+	padding: 6px 9px;
+}
+#pagination a:hover,
+#pagination a.current {
+	border-color: #333;
+	background-color: #dedede;
+}
+
+
+
+/* Sidebar
+----------------------------------------------- */
+
+#sidebar {
+	margin-left: 660px;
+}
+#sidebar h2 {
+	padding-left: 11px;
+	padding-bottom: 4px;
+}
+#sidebar ul, #sidebar p {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #bfbfbf;
+	padding-left: 11px;
+	padding-bottom: 31px;
+}
+#sidebar li {
+	float: left;
+	width: 214px;
+	list-style: none;
+}
+#sidebar li.widget {
+	padding-top: 31px;
+	width: 100%;
+}
+#sidebar ul li a {
+	float: left;
+	width: 100%;
+	display: block;
+	padding: 0.4em 0;
+}
+
+#sidebar ul li a.subscribe {
+	padding-left: 38px;
+}
+.rss {
+	background: transparent url(../images/rss.gif) no-repeat 0 50%;
+	padding: 2px 0;
+}
+.email {
+	background: transparent url(../images/rss_email.gif) no-repeat 0 50%;
+	padding: 2px 0;
+}
+.twitter {
+	background: transparent url(../images/rss_twitter.gif) no-repeat 0 50%;
+	padding: 2px 0;
+}
+
+#sidebar ul li img {
+	float: left;
+	display:block;
+	padding-top: 0.5em;
+	padding-right: 0.4em;
+}
+#sidebar p {
+	padding-top: 0.8em;
+	padding-left: 11px;
+}
+#sidebar p a img {
+	float: left;
+}
+#sidebar #advertisement a.image {
+	float: left;
+	border: 1px solid #bfbfbf;
+	padding: 12px;
+}
+.widget-container {
+	float: left;
+	width: 100%;
+	padding-top: 31px;
+}
+
+
+
+/* Search
+----------------------------------------------- */
+
+#search {
+	float: left;
+	width: 214px;
+	border: 1px solid #bfbfbf;
+	padding: 5px;
+	background-color: #fff;
+	margin-bottom: 18px;
+}
+#search input {
+	background-color: #fff;
+	border: none;
+	float: left;
+	width: 198px;
+}
+#search input.button,
+#search #searchsubmit {
+	width: 15px;
+	height: 15px;
+	background: url(../images/search_button.gif) no-repeat 0 0;
+	cursor: pointer;
+	text-indent: -999px;
+}
+#searchform .hidden, #searchform .screen-reader-text { 
+	display: none;
+}
+
+
+
+/* Comments
+----------------------------------------------- */
+
+.commentlist {
+	margin-bottom: 14px;
+}
+#comment {
+	width: 500px;
+}
+li.comment {
+	border-bottom: 1px solid #DFDFDF;
+	padding: 2em;
+}
+li.comment img {
+	float: left;
+	padding: 4px;
+	margin-right: 1.4em;
+	margin-bottom: 1.4em;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+li.comment p {
+	width: 93%;
+}
+div.comment-author {
+	margin-bottom: 0.4em;
+}
+div.comment-meta {
+	float: right;
+	padding: 0 0 0.8em 0.8em;
+}
+div.cancel-comment-reply,
+#commentform {
+	margin-top: 2em;
+}
+#commentform p {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px dashed #CCC;
+}
+#commentform p input {
+	margin-right: 1em;
+}
+
+
+
+/* Contact Form
+----------------------------------------------- */
+
+.wpcf7 div label {
+	float: left;
+	min-width: 100px;
+	text-align: left;
+	margin-top: 6px;
+}
+.wpcf7 .email {
+	background:none;
+}
+.wpcf7 .button input {
+	float: left;
+	margin-left: 100px;
+}
+
+
+
+/* Footer
+----------------------------------------------- */
+
+#footer-wrapper {
+	width: 100%;
+	background-color: #243c48;
+}
+#footer {
+	width: 945px;
+	margin: 0 auto;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	background-color: #243c48;
+}
+#footer ul {
+	float: left;
+}
+#footer ul li {
+	float: left;
+	display: block;
+	margin-left: 1em;
+}
+#footer ul li a {
+	margin-right: 1em;
+}
